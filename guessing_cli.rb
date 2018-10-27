@@ -4,7 +4,7 @@ def run_guessing_game
   input = gets.chomp 
   guess = rand(1..6)
   case input
-    when guess.to_num
+    when guess.to_i
       
 
 
