@@ -1,4 +1,22 @@
 def run_guessing_game
+  input = ""
+  while input
+  input = gets.chomp 
+  guess = rand(1..6)
+  case input
+    when guess.to_num
+      
+
+
+
+
+
+
+
+
+
+
+def run_guessing_game
   command = ""
   while command
   puts "Guess a number between 1 and 6."
