@@ -1,10 +1,10 @@
 def run_guessing_game
   input = ""
   while input
-  input = gets.chomp 
-  guess = rand(1..6)
+  input = gets.downcase.chomp 
+  guess = rand(1..6).to_s
   case input
-    when guess.to_i
+    when guess
       puts "You guessed the correct number!"
     when "exit"
       puts "Later"
